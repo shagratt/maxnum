@@ -1,0 +1,70 @@
+/* Clases Nuevas acá */
+.btn-num {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 5em;
+    border-radius: 0.2em;
+}
+#DivMal {
+    background: #970000;
+    height: 100vh;
+    text-align: center;
+}
+#DivBien {
+    background: #40fc8e;
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;
+    background-color:#ebecf1;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto,system-ui,-apple-system,"Helvetica Neue",Arial; 
+}
+
+:root {
+    --g7-main-color: #0d6efd;
+    --g7-backcolor: #F7F7F7;
+}
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {opacity: .35;filter: grayscale(1) contrast(0.5);}
+.btn:hover {box-shadow: 0 2px 5px -2px;}
+/* Cambio colores de Botones y efecto invertido */
+.btn-outline-secondary { color: #1f2122;}
+.btn-info {background-color: #5f98ea;border-color: #5f98ea;color: white;}
+.btn-check:active+.btn-info, .btn-check:checked+.btn-info, .btn-info.active, .btn-info:active, .show>.btn-info.dropdown-toggle {background-color: #5f98ea;border-color: #5f98ea;color: white;}
+.btn-check:focus+.btn-info, .btn-info:focus {color: #fff;background-color: #4980ce;border-color: #5f98ea;box-shadow: 0 0 0 0.25rem rgb(148 187 214);}
+.btn-check:active+.btn-info:focus, .btn-check:checked+.btn-info:focus, .btn-info.active:focus, .btn-info:active:focus, .show>.btn-info.dropdown-toggle:focus {box-shadow: 0 0 0 0.25rem rgb(95 152 234 / 42%);}
+.btn-info:hover {color: #0069ff;background-color: #ffffff;border-color: #5f98ea;}
+.btn-success:hover {color: #146c43;background-color: #fdfffe;}
+.btn-danger:hover {color: #b02a37;background-color: #ffffff;}
+.btn-warning {color: #fff;background-color: #ffc107;border-color: #ffc107;text-shadow: 0 0px 10px #4b471b;}
+.btn-check:active+.btn-warning, .btn-check:checked+.btn-warning, .btn-warning.active, .btn-warning:active, .show>.btn-warning.dropdown-toggle {color: #fff;}
+.btn-check:focus+.btn-warning, .btn-warning:focus {color: #fff;background-color: #ebba29;box-shadow: 0 0 0 0.25rem rgb(253 223 146);}
+.btn-warning:hover {color: #b38f23;background-color: #ffffff;border-color: #b8901a;text-shadow: 0 0px 0px #e8b10e;}
+.btn-check:focus+.btn-light, .btn-light:focus {box-shadow: 0 0 0 0.25rem rgb(211 212 213);}
+.btn-dark:hover {color: #0e0e0e;background-color: #ffffff;border-color: #1a1e21;}
+.btn-light:hover {border-color: #444242;}
+.btn-secondary {background-color: #5f7088;border-color: #5f7088;}
+.btn-secondary:hover {color: #5f7088;border-color: #5f7088;background-color: #fff;}
+.btn-primary:hover { border-color: var(--g7-main-color); background-color: #ffffff;color: var(--g7-main-color);}
+
+
+/* Clases a revisar */
+
+
+.imgZoomContainer {
+    border: 1px solid #ffffffa6;
+    width: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 1s 0s cubic-bezier(0, 0, 0.2, 1);
+}
+.imgZoomContainer >img {border-radius: 5px;transition: all 3s 0s cubic-bezier(0, 0, 0.24, -0.18), filter 2s 0s;image-rendering: -webkit-optimize-contrast;}
+.imgZoomContainer:hover >img {filter: saturate(1.3) contrast(1.1);}
+
+
+
+

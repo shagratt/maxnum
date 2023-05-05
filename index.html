@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>MAX NUMEROS</title>
+
+    <!-- Bootstrap CSS/JS -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <link rel="preconnect" href="https://ajax.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Font-Awesome -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts - Poppins, Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="max.js"></script>
+    <link href="max.css" rel="stylesheet"> 
+
+</head>
+
+<audio id="Audio1"><source src="audio/1.mp3" type="audio/mpeg"></audio>
+<audio id="Audio2"><source src="audio/2.mp3" type="audio/mpeg"></audio>
+<audio id="Audio3"><source src="audio/3.mp3" type="audio/mpeg"></audio>
+<audio id="Audio4"><source src="audio/4.mp3" type="audio/mpeg"></audio>
+<audio id="Audio5"><source src="audio/5.mp3" type="audio/mpeg"></audio>
+<audio id="Audio6"><source src="audio/6.mp3" type="audio/mpeg"></audio>
+<audio id="Audio7"><source src="audio/7.mp3" type="audio/mpeg"></audio>
+<audio id="Audio8"><source src="audio/8.mp3" type="audio/mpeg"></audio>
+<audio id="Audio9"><source src="audio/9.mp3" type="audio/mpeg"></audio>
+<audio id="Audio10"><source src="audio/10.mp3" type="audio/mpeg"></audio>
+
+<audio id="ABien"><source src="audio/ABien.mp3" type="audio/mpeg"></audio>
+<audio id="AMal"><source src="audio/AMal.mp3" type="audio/mpeg"></audio>
+
+<body class="scrbar" tabindex="0">
+<div id="DivMal">
+<!-- <i class="fa fa-tired pe-3"></i> -->
+    <div class="w-100" style="padding: 3rem;display: flex;flex-direction: column;align-items: center;">
+        <button id="btnReintentar" class="btn btn-primary w-100" style="font-size: 4em;">Reintentar</button>
+    </div>
+    <div class="progress mt-2 mb-2" style="margin-left: 3rem;margin-right: 3rem;">
+        <div id="PGbar" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+    </div>
+</div>
+
+<div id="DivBien">
+    <div class="w-100 row" style="padding: 3rem;">
+        <button id="btnOtraVez" class="btn btn-primary" style="font-size: 4em;"><i class="fa fa-poo pe-3"></i>Otra vez</button>
+    </div>    
+</div>
+
+<div id="DivMain" class="ps-2 pe-2">
+    <div class="w-100 row" style="padding: 3rem;">
+        <button id="btnRepetir" class="btn btn-primary" style="font-size: 4em;"><i class="fa fa-redo pe-3"></i>Repetir</button>
+    </div>
+    <div class="row row-cols-5">
+        <div class="col"><button id="btn1" class="btn btn-info btn-num">1</button></div>
+        <div class="col"><button id="btn2" class="btn btn-info btn-num">2</button></div>
+        <div class="col"><button id="btn3" class="btn btn-info btn-num">3</button></div>
+        <div class="col"><button id="btn4" class="btn btn-info btn-num">4</button></div>
+        <div class="col"><button id="btn5" class="btn btn-info btn-num">5</button></div>
+        <div class="col"><button id="btn6" class="btn btn-info btn-num">6</button></div>
+        <div class="col"><button id="btn7" class="btn btn-info btn-num">7</button></div>
+        <div class="col"><button id="btn8" class="btn btn-info btn-num">8</button></div>
+        <div class="col"><button id="btn9" class="btn btn-info btn-num">9</button></div>
+        <div class="col"><button id="btn10" class="btn btn-info btn-num">10</button></div>
+    </div>
+</div>
+</body>
