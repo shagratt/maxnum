@@ -20,6 +20,23 @@ body {
     background-color:#ebecf1;
 }
 
+#wincant{
+    font-size: 4em;
+    margin-left: 2rem;
+    color: #5b3c0e;
+    text-shadow: 1px 1px 0px black;    
+}
+
+#winnum {
+    font-size: min(50vh,20vw);
+    margin-top: -0.35em;
+    padding-top: 0;
+    color: #0851f5;
+    text-shadow: 0 0 62px white, 1px 1px 2px black;
+    animation: huerotator1 8s linear 0s infinite normal;
+}
+@keyframes huerotator1 {0% {filter: hue-rotate(0deg);}100% {filter: hue-rotate(360deg);}}
+
 * {
     -webkit-font-smoothing: antialiased;
     font-family: Roboto,system-ui,-apple-system,"Helvetica Neue",Arial; 

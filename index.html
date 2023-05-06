@@ -44,8 +44,30 @@
 <audio id="AMal"><source src="audio/AMal.mp3" type="audio/mpeg"></audio>
 
 <body class="scrbar" tabindex="0">
-<div id="DivMal">
-<!-- <i class="fa fa-tired pe-3"></i> -->
+
+ <!-- --------------- MENU --------------- -->
+<div id="DivMenu" class="w-100" style="font-size: 2em;padding:0 3rem;">
+    <div class="text-center"><u>OPCIONES</u></div>
+    <div class="row" style="padding: 3rem;">
+        <div class="col-6">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="swTilt" checked="">
+                <label for="swTilt" class="form-check-label">Inclinar</label>
+                <input type="text" class="form-input" id="swTiltPorc" value="35" style="width: 2em;">
+            </div>        
+        </div>
+        <div class="col-6">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="swDesordenar" checked="">
+                <label for="swTilt" class="form-check-label">Desordenar</label>
+            </div>        
+        </div>
+    </div>    
+    <button id="btnIniciar" class="btn btn-primary mt-4 w-100" style="font-size: 2rem;"><i class="fa fa-th pe-3"></i>INICIAR</button>
+</div>
+
+ <!-- --------------- MAL --------------- -->
+ <div id="DivMal">
     <div class="w-100" style="padding: 3rem;display: flex;flex-direction: column;align-items: center;">
         <button id="btnReintentar" class="btn btn-primary w-100" style="font-size: 4em;">Reintentar</button>
     </div>
@@ -54,27 +76,26 @@
     </div>
 </div>
 
-<div id="DivBien">
-    <div class="w-100 row" style="padding: 3rem;">
-        <button id="btnOtraVez" class="btn btn-primary" style="font-size: 4em;"><i class="fa fa-poo pe-3"></i>Otra vez</button>
-    </div>    
+ <!-- --------------- BIEN --------------- -->
+<div id="DivBien" class="text-center w-100">
+    <div class="w-100" style="padding: 3rem;">
+        <button id="btnOtraVez" class="btn btn-primary w-100" style="font-size: 4em;"><i class="fa fa-smile pe-3"></i>Otra vez</button>
+    </div>
+    <div class="row">
+        <div id="winnum" class="col-3"></div>
+        <div class="col-8">
+            <div id="wincant" class="row row-cols-5">
+            </div>
+        </div>
+    </div>
 </div>
 
+ <!-- --------------- PRINCIPAL --------------- -->
 <div id="DivMain" class="ps-2 pe-2">
     <div class="w-100 row" style="padding: 3rem;">
         <button id="btnRepetir" class="btn btn-primary" style="font-size: 4em;"><i class="fa fa-redo pe-3"></i>Repetir</button>
     </div>
-    <div class="row row-cols-5">
-        <div class="col"><button id="btn1" class="btn btn-info btn-num">1</button></div>
-        <div class="col"><button id="btn2" class="btn btn-info btn-num">2</button></div>
-        <div class="col"><button id="btn3" class="btn btn-info btn-num">3</button></div>
-        <div class="col"><button id="btn4" class="btn btn-info btn-num">4</button></div>
-        <div class="col"><button id="btn5" class="btn btn-info btn-num">5</button></div>
-        <div class="col"><button id="btn6" class="btn btn-info btn-num">6</button></div>
-        <div class="col"><button id="btn7" class="btn btn-info btn-num">7</button></div>
-        <div class="col"><button id="btn8" class="btn btn-info btn-num">8</button></div>
-        <div class="col"><button id="btn9" class="btn btn-info btn-num">9</button></div>
-        <div class="col"><button id="btn10" class="btn btn-info btn-num">10</button></div>
+    <div class="row row-cols-5" id="RowNumbers">
     </div>
 </div>
 </body>
