@@ -4,7 +4,7 @@ function randn(min, max) {return Math.floor(Math.random() * (max - min + 1)) + m
 
 var RespuestaCorrecta=3;
 var minNum=1;
-var maxNum=10;
+var maxNum=15;
 var totNum=0;
 var rotar=false;
 var tiltangle=35;
